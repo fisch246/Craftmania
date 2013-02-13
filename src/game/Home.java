@@ -34,12 +34,12 @@ public class Home extends JPanel  {
     JScrollPane scrollPane;
 	public void drawConsole (){ //CREATES THE CONSULE
 	   	outputArea = new JTextArea("It's TIME TO CRAFT!!!!");
-	   	outputArea.append("\n...Lets push this update through!!");
+	   	outputArea.append("\n...Lets do this!!!!");
 		outputArea.setCaretPosition(outputArea.getDocument().getLength());
 	   	outputArea.setLineWrap(true);
 	    outputArea.setWrapStyleWord(true);
 	    scrollPane = new JScrollPane(outputArea);
-	    scrollPane.setBounds(20, 400, 600, 150);
+	    scrollPane.setBounds(620, 10, 360, 540);
 	    add(scrollPane);
 
   }
