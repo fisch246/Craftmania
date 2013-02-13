@@ -1,3 +1,5 @@
+package game;
+
 import javax.swing.JFrame;
 import java.awt.*;
 import java.applet.*;
@@ -7,8 +9,8 @@ import java.text.*;
 import java.lang.Math.*;
 import java.util.*;
 
-public class Home extends JPanel implements ActionListener, ItemListener {
-
+public class Home extends JPanel  {
+//implements ActionListener, ItemListener
     public Home() {
     	setLayout(null);
 		setBackground(new Color(30,30,35));
@@ -32,6 +34,8 @@ public class Home extends JPanel implements ActionListener, ItemListener {
     JScrollPane scrollPane;
 	public void drawConsole (){ //CREATES THE CONSULE
 	   	outputArea = new JTextArea("It's TIME TO CRAFT!!!!");
+	   	outputArea.append("\n...Lets push this update through!!");
+		outputArea.setCaretPosition(outputArea.getDocument().getLength());
 	   	outputArea.setLineWrap(true);
 	    outputArea.setWrapStyleWord(true);
 	    scrollPane = new JScrollPane(outputArea);
