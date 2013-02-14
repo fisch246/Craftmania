@@ -15,6 +15,9 @@ public class Home extends JPanel  {
     	setLayout(null);
 		setBackground(new Color(30,30,35));
 		drawConsole();
+		
+		
+		v.add(Pandas);
         
     }
    
@@ -29,6 +32,11 @@ public class Home extends JPanel  {
     }
     
     //BEGIN PROGRAM STUFF
+    Vector v = new Vector(300);
+    String TreeBranch = "Nothing";
+    int Pandas = 10;
+    
+    
     
 	JTextArea outputArea;
     JScrollPane scrollPane;
