@@ -9,8 +9,9 @@ import java.text.*;
 import java.lang.Math.*;
 import java.util.*;
 
-public class Home extends JPanel  {
-//implements ActionListener, ItemListener
+public class Home extends JPanel /*implements ActionListener, ItemListener*/ {
+
+	String penguin = "linux";
     public Home() {
     	setLayout(null);
 		setBackground(new Color(30,30,35));
@@ -18,6 +19,9 @@ public class Home extends JPanel  {
 		
 		
 		v.add(Pandas);
+        v.add(penguin);
+        
+        System.out.println("int test: "+v.get(0)+" String test: "+v.get(1));
         
     }
    
